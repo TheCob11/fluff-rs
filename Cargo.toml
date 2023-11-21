@@ -1,0 +1,19 @@
+[package]
+name = "fluff"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde = { version = "1.0.190", features = ["derive", "rc"] }
+serde_json = "1.0.108"
+serde-big-array = "0.5.1"
+thiserror = "1.0.50"
+rand = { version = "0.8.5", features = [] }
+indexmap = { version = "2.1.0", features = ["serde"] }
+
+[dev-dependencies]
+itertools = "0.12.0"
+anyhow = "1.0.75"
+dialoguer = "0.11.0"
